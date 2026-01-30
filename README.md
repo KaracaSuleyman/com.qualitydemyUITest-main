@@ -1,38 +1,41 @@
-# KURALLAR
-<br>
+RULES
+WRITING RULES
+Comment lines must not be forgotten within the code.
 
-YAZIM KURALLARI<br>
-*dil ingilizce olacak<br>
-*kodlarin arasinda yorum satirlari olmasi cok iyi olur (mumkunse ing.)
+NAMING CONVENTIONS
+Names must end with the type.
 
-ISIMLENDIRMELER
-1. Isimlendirme tur ile bitecek<br>
-   1 -courseManagerButton
-2. camelCase Kullanilacak
-3. isimler tur ilebitecek (button text dropdown vs)
+e.g., courseManagerButton
 
+camelCase must be used.
 
-GIT-HUB
-<hr>
+Names must end with the type (button, text, dropdown, etc.).
 
-GIT-HUB YAPILMASI GEREKENLER
+GITHUB
+GITHUB DOS
+After being added as a GitHub collaborator, the first task is to create a branch.
 
-- Git-Hub collabrator olusturulduktan sonra ilk is branch olusturmak
-- git add . (kendi bracnh`imizde yapilir)
-- git commit -m (kendi bracnh imizde yapilir) yapilip repositories` e branch tanitilir
-- <b>"git add .  "   sekilinde degil!!</b> 
-- git add dosyayolu kullanilmali yol push edeceginiz class a sag tiklayip once copy path ordanda path from content root yolu ile elde edebilrsiniz 
-- ornegin "<b>src/test/java/tests/QA_Suleyman/US_10.java"</b>
-- projede calismaya baslamadan once git pull  (main de)
-- git pull kesinlikle main de yapilacak ve sonra daha sonra kendi branch`ina gecip merge yapilacak
--  Surekli branch ile main de OLMADIGIMIZ kontrol edilecek
-- commit yaparken -m "tarih isim"
-   <br>
+git add . (Performed within your own branch).
 
- <hr>
+git commit -m (Performed within your own branch) to introduce the branch to the repository.
 
-GIT-HUB YAPILMAMASI GEREKENLER
+DO NOT use "git add ." blindly!
 
--mainde kesinlikle calisilmayacak<br>
--Iletisime gecilmeden push yapilmayacak<br>
--ortak alandaki degisiklik gerektiginde  lead e donus yapilacak<br>
+git add [file_path] must be used. You can obtain the path by right-clicking the class you will push, selecting "Copy Path," and then "Path From Content Root."
+
+Example: src/test/java/tests/QA_Suleyman/US_10.java
+
+Before starting work on the project, run git pull (on main).
+
+git pull must strictly be done on main, then switch to your own branch and perform a merge.
+
+Continuously check that you are on your branch and NOT on main.
+
+When committing, use -m "date name".
+
+GITHUB DON'TS
+Never work directly on main.
+
+Do not push without establishing communication.
+
+If a change is required in a shared area, report back to the Lead.
