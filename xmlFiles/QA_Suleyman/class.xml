@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="run class">
+    <test name="class">
+        <classes>
+            <class name="tests.QA_Suleyman.US_10"></class>
+            <class name="tests.QA_Suleyman.US_22"></class>
+        </classes>
+    </test>
+</suite>
