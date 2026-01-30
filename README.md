@@ -1,41 +1,68 @@
-RULES
-WRITING RULES
-Comment lines must not be forgotten within the code.
 
-NAMING CONVENTIONS
-Names must end with the type.
 
-e.g., courseManagerButton
+# RULES
 
-camelCase must be used.
+## WRITING RULES
 
-Names must end with the type (button, text, dropdown, etc.).
+* There **must be comment lines inside the code**.
 
-GITHUB
-GITHUB DOS
-After being added as a GitHub collaborator, the first task is to create a branch.
+## NAMING CONVENTIONS
 
-git add . (Performed within your own branch).
+1. Names **must end with the type**
 
-git commit -m (Performed within your own branch) to introduce the branch to the repository.
+   * Example: `courseManagerButton`
+2. **camelCase** must be used.
+3. Names **must always end with the component type**
 
-DO NOT use "git add ." blindly!
+   * Examples: `button`, `text`, `dropdown`, etc.
 
-git add [file_path] must be used. You can obtain the path by right-clicking the class you will push, selecting "Copy Path," and then "Path From Content Root."
+---
 
-Example: src/test/java/tests/QA_Suleyman/US_10.java
+## GITHUB
 
-Before starting work on the project, run git pull (on main).
+### REQUIRED GITHUB PRACTICES
 
-git pull must strictly be done on main, then switch to your own branch and perform a merge.
+* After being added as a GitHub collaborator, the **first step is to create a branch**.
+* `git add .` must be executed **only in your own branch**.
+* `git commit -m "..."` must be executed **only in your own branch** and then pushed so the branch is registered in the repository.
+* ❌ **Do NOT use** commands like:
 
-Continuously check that you are on your branch and NOT on main.
+  ```
+  "git add ."
+  ```
+* ✅ **Always use file paths** with `git add`.
 
-When committing, use -m "date name".
+  * You can get the correct path by:
 
-GITHUB DON'TS
-Never work directly on main.
+    * Right-clicking the class
+    * Selecting **Copy Path**
+    * Choosing **Path from Content Root**
+  * Example:
 
-Do not push without establishing communication.
+    ```
+    src/test/java/tests/QA_Suleyman/US_10.java
+    ```
+* Before starting any work on the project, run:
 
-If a change is required in a shared area, report back to the Lead.
+  ```
+  git pull
+  ```
+
+  **on the `main` branch**.
+* `git pull` **must always be done on `main`**, then switch to your own branch and merge.
+* **Always make sure you are NOT on `main`** while working.
+* Commit message format must be:
+
+  ```
+  -m "date name"
+  ```
+
+---
+
+### FORBIDDEN GITHUB PRACTICES
+
+* ❌ **Never work on `main`**.
+* ❌ **Never push without communication**.
+* ❌ If a change affects shared/common areas, **contact the team lead first**.
+
+---
